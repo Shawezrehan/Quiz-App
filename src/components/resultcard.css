@@ -5,12 +5,12 @@
   margin-top: 25px;      
 }
 .result-card {
-  width: 50%;
+  width: 40%;
   max-width: 510px;
   border-radius: 20px;
   background: #1a1a1a;
-  padding-left:50px;
-  padding-right:80px;
+  padding-left:40px;
+  padding-right:50px;
   padding-bottom:20px;
   box-shadow: 23px 23px 30px rgba(0, 0, 0, 1);
   text-align: center;
