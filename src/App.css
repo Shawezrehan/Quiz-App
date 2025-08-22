@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 20%, #002b2b 60%, #00ffff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 20%, #002b2b 60%, #00ffff 100%);
+  padding: 05px;
+  text-align: left;
+  padding-left: 05%;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+}
+.quiz-container {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 31%;
+  padding: 58px 98px 28px 68px;
+  background-color: #0d0d0d;
+  color: #4da6ff;
+  height: 100%;
+  border-radius: 20px; 
+  box-shadow: 23px 23px 30px rgba(0, 0, 0, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quiz-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-shadow: 0 0 12px #0ff, 0 0 22px #00e6e6;
+}
+
+.quiz-container h2 {
+  font-size: 1.3rem;
+  color: #4da6ff;
+}
+
+.quiz-container h3 {
+  font-size: 38px;
+  color: #4da6ff;
+  text-decoration: underline;
+  text-decoration-color: #ff6600;
+  text-underline-offset: 8px;   
+}
+
+.quiz-container button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgb(49, 177, 177), #2575fc);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  box-shadow:  0 0 9px #00e6e6;
+}
+
+.quiz-container button:hover {
+  color: #0ddd;
+  background: linear-gradient(135deg, #2575fc, #032b3d);
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+  }
+    .quiz-container {
+    width: 85%;
+    margin: 200px auto;   /* center horizontally */
+    padding: 50px;
+    border-radius: 15px;
+  }
+   .quiz-container h1 {
+    font-size: 1.6rem;
+  }
+   .quiz-container h2 {
+    font-size: 1.1rem;
+  }
+    .quiz-container h3 {
+    font-size: 24px;
+  }
+  .quiz-container button {
+    width: 80%;
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    font-size: 14px;
+    padding: 8px;
+    letter-spacing: 1px;
+  }
+
+  .quiz-container {
+    max-width: 95%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .quiz-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .quiz-container h3 {
+    font-size: 20px;
+  }
+
+  .quiz-container button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,71 @@
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.options-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  width: 100%;
+  background: #1a1a1a;
+  border: 2px solid #4da6ff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.options-container label:hover {
+  background: rgb(49, 177, 177);
+  color: #000;
+  transform: scale(1.02);
+}
+
+.options-container input[type="radio"] {
+  transform: scale(1.2);
+  accent-color: #2575fc;
+}
+
+/* Responsive Design for Options */
+@media (max-width: 768px) {
+  .options-container {
+    gap: 10px;
+    margin-top: 15px;
+    
+  }
+
+  .options-container label {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .options-container input[type="radio"] {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .options-container {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .options-container label {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    width: 93%;
+  }
+
+  .options-container input[type="radio"] {
+    transform: scale(1);
+  }
+}

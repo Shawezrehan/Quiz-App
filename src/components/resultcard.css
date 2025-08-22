@@ -1,0 +1,108 @@
+.result-wrap {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  margin-top: 25px;      
+}
+.result-card {
+  width: 50%;
+  max-width: 510px;
+  border-radius: 20px;
+  background: #1a1a1a;
+  padding-left:50px;
+  padding-right:80px;
+  padding-bottom:20px;
+  box-shadow: 23px 23px 30px rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0ff;
+  text-shadow: 0 0 2px #0ff, 0 0 12px #00e6e6;
+  margin-bottom: 8px;
+}
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.badge.pass { background: #ecfdf5; color: #2575fc; border: 2px solid #2575fc; }
+.badge.fail { background: #fef2f2; color: #dc2626; border: 2px solid #2575fc; }
+
+.score {
+  font-size: 22px;
+  color: #00b3b3;
+  margin: 6px 0 12px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;                 
+  color: #474e5e;           
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.stats p { margin: 0; }
+.stats .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #005ccc; display: inline-block;
+}
+.target-note {
+  color: #474e5e;
+  font-size: 14px;
+  margin: 4px 0 10px;
+}
+
+.status {
+  font-size: 26px;          
+  font-weight: 800;
+  margin: 8px 0 12px;
+}
+.status.pass { color: #2575fc; }
+.status.fail { color: #ef4444; }
+
+.result-gif {
+  width: 340px;             
+  max-width: 60%;
+  border-radius: 12px;
+  margin: 16px auto 14px;
+  display: block;
+
+}
+.motivation {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.button {
+  margin-top: 6px;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: #fff;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.button:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,.12); }
+
+
+@media (max-width: 768px) {
+  .result-wrap {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  margin: 130px auto;     
+}
+}
