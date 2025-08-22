@@ -1,4 +1,4 @@
-import "./Options.css";
+import "./options.css";
 
 export function Options({ correctAnswer, incorrectAnswer, onAnswer, answer }) {
   const allOptions = [correctAnswer, ...incorrectAnswer].sort();
